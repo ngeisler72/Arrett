@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "f0a08b96-fde1-45c3-a85f-02d6ff08a727",
+		"name": "Arrett API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8464270"
+	},
+	"item": [
+		{
+			"name": "Arrett Rate LTL",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<PierbridgeRateRequest>\r\n  <PurchaseOrderNumber>000394982</PurchaseOrderNumber>\r\n  <Live>false</Live>\r\n  <Carrier>1069</Carrier>\r\n  <ServiceType>1067</ServiceType>\r\n  <ShipDate />\r\n  <CustomRateEngineKey2>P,Arett Sales Corp.- TEST,9285 Commerce Highway,Pennsauken, NJ 08110,,USA</CustomRateEngineKey2>\r\n  <Receiver>\r\n    <CompanyName>AS HOME CTR</CompanyName>\r\n    <Street>2435 RTE 35</Street>\r\n    <City>MANASQUAN</City>\r\n    <Region>NJ</Region>\r\n    <PostalCode>08736</PostalCode>\r\n    <Country>USA</Country>\r\n  </Receiver>\r\n  <Billing>\r\n    <PayerType>1</PayerType>\r\n  </Billing>\r\n  <Packages>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n  </Packages>\r\n  <UserName>vaiagilect</UserName>\r\n</PierbridgeRateRequest>\r\n"
+				},
+				"url": {
+					"raw": "71.27.13.97:841/rate",
+					"host": [
+						"71",
+						"27",
+						"13",
+						"97"
+					],
+					"port": "841",
+					"path": [
+						"rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrett Rate Parcel",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<PierbridgeRateRequest>\r\n  <PurchaseOrderNumber>000394982</PurchaseOrderNumber>\r\n  <Live>false</Live>\r\n  <Carrier>1069</Carrier>\r\n  <ServiceType>1067</ServiceType>\r\n  <ShipDate />\r\n  <CustomRateEngineKey2>P,Arett Sales Corp.- TEST,9285 Commerce Highway,Pennsauken, NJ 08110,,USA</CustomRateEngineKey2>\r\n  <Receiver>\r\n    <CompanyName>AS HOME CTR</CompanyName>\r\n    <Street>2435 RTE 35</Street>\r\n    <City>MANASQUAN</City>\r\n    <Region>NJ</Region>\r\n    <PostalCode>08736</PostalCode>\r\n    <Country>USA</Country>\r\n  </Receiver>\r\n  <Billing>\r\n    <PayerType>1</PayerType>\r\n  </Billing>\r\n  <Packages>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n  </Packages>\r\n  <UserName>vaiagilect</UserName>\r\n</PierbridgeRateRequest>\r\n"
+				},
+				"url": {
+					"raw": "71.27.13.97:841/rate",
+					"host": [
+						"71",
+						"27",
+						"13",
+						"97"
+					],
+					"port": "841",
+					"path": [
+						"rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrett Rate Parcel SINGLE",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<PierbridgeRateRequest>\r\n  <PurchaseOrderNumber>000394982</PurchaseOrderNumber>\r\n  <Live>false</Live>\r\n  <Carrier>1069</Carrier>\r\n  <ServiceType>1067</ServiceType>\r\n  <ShipDate />\r\n  <CustomRateEngineKey2>P,Arett Sales Corp.- TEST,9285 Commerce Highway,Pennsauken, NJ 08110,,USA</CustomRateEngineKey2>\r\n  <Receiver>\r\n    <CompanyName>AS HOME CTR</CompanyName>\r\n    <Street>2435 RTE 35</Street>\r\n    <City>MANASQUAN</City>\r\n    <Region>NJ</Region>\r\n    <PostalCode>08736</PostalCode>\r\n    <Country>USA</Country>\r\n  </Receiver>\r\n  <Billing>\r\n    <PayerType>1</PayerType>\r\n  </Billing>\r\n  <Packages>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n  </Packages>\r\n  <UserName>vaiagilect</UserName>\r\n</PierbridgeRateRequest>\r\n"
+				},
+				"url": {
+					"raw": "71.27.13.97:841/rate",
+					"host": [
+						"71",
+						"27",
+						"13",
+						"97"
+					],
+					"port": "841",
+					"path": [
+						"rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrett Rate Shop LTL",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<PierbridgeRateRequest>\r\n  <PurchaseOrderNumber>000394982</PurchaseOrderNumber>\r\n  <Live>false</Live>\r\n  <Carrier>1069</Carrier>\r\n  <ServiceType>1067</ServiceType>\r\n  <ShipDate />\r\n  <CustomRateEngineKey2>P,Arett Sales Corp.- TEST,9285 Commerce Highway,Pennsauken, NJ 08110,,USA</CustomRateEngineKey2>\r\n  <Receiver>\r\n    <CompanyName>AS HOME CTR</CompanyName>\r\n    <Street>2435 RTE 35</Street>\r\n    <City>MANASQUAN</City>\r\n    <Region>NJ</Region>\r\n    <PostalCode>08736</PostalCode>\r\n    <Country>USA</Country>\r\n  </Receiver>\r\n  <Billing>\r\n    <PayerType>1</PayerType>\r\n  </Billing>\r\n  <Packages>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n  </Packages>\r\n  <UserName>vaiagilect</UserName>\r\n</PierbridgeRateRequest>\r\n"
+				},
+				"url": {
+					"raw": "71.27.13.97:841/rate",
+					"host": [
+						"71",
+						"27",
+						"13",
+						"97"
+					],
+					"port": "841",
+					"path": [
+						"rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrett Rate Shop Parcel",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<PierbridgeRateRequest>\r\n  <PurchaseOrderNumber>000394982</PurchaseOrderNumber>\r\n  <Live>false</Live>\r\n  <Carrier>1069</Carrier>\r\n  <ServiceType>1067</ServiceType>\r\n  <ShipDate />\r\n  <CustomRateEngineKey2>P,Arett Sales Corp.- TEST,9285 Commerce Highway,Pennsauken, NJ 08110,,USA</CustomRateEngineKey2>\r\n  <Receiver>\r\n    <CompanyName>AS HOME CTR</CompanyName>\r\n    <Street>2435 RTE 35</Street>\r\n    <City>MANASQUAN</City>\r\n    <Region>NJ</Region>\r\n    <PostalCode>08736</PostalCode>\r\n    <Country>USA</Country>\r\n  </Receiver>\r\n  <Billing>\r\n    <PayerType>1</PayerType>\r\n  </Billing>\r\n  <Packages>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <Weight>1</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <Weight>2</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <Weight>3</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n  </Packages>\r\n  <UserName>vaiagilect</UserName>\r\n</PierbridgeRateRequest>\r\n"
+				},
+				"url": {
+					"raw": "71.27.13.97:841/Multifunction",
+					"host": [
+						"71",
+						"27",
+						"13",
+						"97"
+					],
+					"port": "841",
+					"path": [
+						"Multifunction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrett Rate Shop Parcel SINGLE",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<PierbridgeRateRequest>\r\n  <PurchaseOrderNumber>000394982</PurchaseOrderNumber>\r\n  <Live>false</Live>\r\n  <Carrier>1069</Carrier>\r\n  <ServiceType>1067</ServiceType>\r\n  <ShipDate />\r\n  <CustomRateEngineKey2>P,Arett Sales Corp.- TEST,9285 Commerce Highway,Pennsauken, NJ 08110,,USA</CustomRateEngineKey2>\r\n  <Receiver>\r\n    <CompanyName>AS HOME CTR</CompanyName>\r\n    <Street>2435 RTE 35</Street>\r\n    <City>MANASQUAN</City>\r\n    <Region>NJ</Region>\r\n    <PostalCode>08736</PostalCode>\r\n    <Country>USA</Country>\r\n  </Receiver>\r\n  <Billing>\r\n    <PayerType>1</PayerType>\r\n  </Billing>\r\n  <Packages>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n  </Packages>\r\n  <UserName>vaiagilect</UserName>\r\n</PierbridgeRateRequest>\r\n"
+				},
+				"url": {
+					"raw": "71.27.13.97:841/rate",
+					"host": [
+						"71",
+						"27",
+						"13",
+						"97"
+					],
+					"port": "841",
+					"path": [
+						"rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrett Ship LTL",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<PierbridgeShipRequest>\r\n  <PurchaseOrderNumber>000394982</PurchaseOrderNumber>\r\n  <Live>false</Live>\r\n  <Carrier>1069</Carrier>\r\n  <ServiceType>1067</ServiceType>\r\n  <ShipDate />\r\n  <CustomRateEngineKey2>P,Arett Sales Corp.- TEST,9285 Commerce Highway,Pennsauken, NJ 08110,,USA</CustomRateEngineKey2>\r\n  <Receiver>\r\n    <CompanyName>AS HOME CTR</CompanyName>\r\n    <Street>2435 RTE 35</Street>\r\n    <City>MANASQUAN</City>\r\n    <Region>NJ</Region>\r\n    <PostalCode>08736</PostalCode>\r\n    <Country>USA</Country>\r\n  </Receiver>\r\n  <Billing>\r\n    <PayerType>1</PayerType>\r\n  </Billing>\r\n  <Packages>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n  </Packages>\r\n  <UserName>vaiagilect</UserName>\r\n</PierbridgeShipRequest>\r\n"
+				},
+				"url": {
+					"raw": "71.27.13.97:841/Multifunction",
+					"host": [
+						"71",
+						"27",
+						"13",
+						"97"
+					],
+					"port": "841",
+					"path": [
+						"Multifunction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrett Ship Parcel",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<PierbridgeShipRequest>\r\n  <PurchaseOrderNumber>000394982</PurchaseOrderNumber>\r\n  <Live>false</Live>\r\n  <Carrier>1069</Carrier>\r\n  <ServiceType>1067</ServiceType>\r\n  <ShipDate />\r\n  <CustomRateEngineKey2>P,Arett Sales Corp.- TEST,9285 Commerce Highway,Pennsauken, NJ 08110,,USA</CustomRateEngineKey2>\r\n  <Receiver>\r\n    <CompanyName>AS HOME CTR</CompanyName>\r\n    <Street>2435 RTE 35</Street>\r\n    <City>MANASQUAN</City>\r\n    <Region>NJ</Region>\r\n    <PostalCode>08736</PostalCode>\r\n    <Country>USA</Country>\r\n  </Receiver>\r\n  <Billing>\r\n    <PayerType>1</PayerType>\r\n  </Billing>\r\n  <Packages>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n  </Packages>\r\n  <UserName>vaiagilect</UserName>\r\n</PierbridgeShipRequest>\r\n"
+				},
+				"url": {
+					"raw": "71.27.13.97:841/Multifunction",
+					"host": [
+						"71",
+						"27",
+						"13",
+						"97"
+					],
+					"port": "841",
+					"path": [
+						"Multifunction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrett Ship Parcel SINGLE",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<PierbridgeShipRequest>\r\n  <PurchaseOrderNumber>000394982</PurchaseOrderNumber>\r\n  <Live>false</Live>\r\n  <Carrier>1069</Carrier>\r\n  <ServiceType>1067</ServiceType>\r\n  <ShipDate />\r\n  <CustomRateEngineKey2>P,Arett Sales Corp.- TEST,9285 Commerce Highway,Pennsauken, NJ 08110,,USA</CustomRateEngineKey2>\r\n  <Receiver>\r\n    <CompanyName>AS HOME CTR</CompanyName>\r\n    <Street>2435 RTE 35</Street>\r\n    <City>MANASQUAN</City>\r\n    <Region>NJ</Region>\r\n    <PostalCode>08736</PostalCode>\r\n    <Country>USA</Country>\r\n  </Receiver>\r\n  <Billing>\r\n    <PayerType>1</PayerType>\r\n  </Billing>\r\n  <Packages>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n  </Packages>\r\n  <UserName>vaiagilect</UserName>\r\n</PierbridgeShipRequest>\r\n"
+				},
+				"url": {
+					"raw": "71.27.13.97:841/Multifunction",
+					"host": [
+						"71",
+						"27",
+						"13",
+						"97"
+					],
+					"port": "841",
+					"path": [
+						"Multifunction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Arrett Address",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<PierbridgeRateRequest>\r\n  <PurchaseOrderNumber>000394982</PurchaseOrderNumber>\r\n  <Live>false</Live>\r\n  <Carrier>1069</Carrier>\r\n  <ServiceType>1067</ServiceType>\r\n  <ShipDate />\r\n  <CustomRateEngineKey2>P,Arett Sales Corp.- TEST,9285 Commerce Highway,Pennsauken, NJ 08110,,USA</CustomRateEngineKey2>\r\n  <Receiver>\r\n    <CompanyName>AS HOME CTR</CompanyName>\r\n    <Street>2435 RTE 35</Street>\r\n    <City>MANASQUAN</City>\r\n    <Region>NJ</Region>\r\n    <PostalCode>08736</PostalCode>\r\n    <Country>USA</Country>\r\n  </Receiver>\r\n  <Billing>\r\n    <PayerType>1</PayerType>\r\n  </Billing>\r\n  <Packages>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n    <Package>\r\n      <ShipperReference></ShipperReference>\r\n      <ReceiverName>AS HOME CTR</ReceiverName>\r\n      <ReceiverPhone>6315889770</ReceiverPhone>\r\n      <FreightClass>65</FreightClass>\r\n      <Weight>5999.8680</Weight>\r\n      <NMFC>68140-5</NMFC>\r\n      <RecordIdentifiers>\r\n        <RecordIdentifier>\r\n          <Keys>\r\n            <Key6>3</Key6>\r\n          </Keys>\r\n        </RecordIdentifier>\r\n      </RecordIdentifiers>\r\n    </Package>\r\n  </Packages>\r\n  <UserName>vaiagilect</UserName>\r\n</PierbridgeRateRequest>\r\n"
+				},
+				"url": {
+					"raw": "71.27.13.97:841/rate",
+					"host": [
+						"71",
+						"27",
+						"13",
+						"97"
+					],
+					"port": "841",
+					"path": [
+						"rate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
